@@ -1,3 +1,6 @@
+@use "_variables" as var;
+@use "sass:math";
+
 header {
   width: 100%;
   z-index: 150;
@@ -18,7 +21,7 @@ header {
 }
 
 .header-title {
-  font-family: $header-title-font-family;
+  font-family: var.$header-title-font-family;
   font-weight: bold;
   margin-right: 0.5rem;
   min-width: 10%;
@@ -102,7 +105,7 @@ header {
   .open &,
   &.mobile {
     input {
-      color: $global-font-color;
+      color: var.$global-font-color;
       background-color: $search-background-color;
       padding: 0 2rem 0 2rem;
     }
@@ -156,7 +159,7 @@ header {
         margin: 0 0.5rem;
 
         &.delimiter {
-          border-left: 1.5px solid $global-font-color;
+          border-left: 1.5px solid var.$global-font-color;
           border-left-color: $header-delimiter;
         }
 
@@ -216,7 +219,7 @@ header {
 
         span {
           display: block;
-          background: $global-font-color;
+          background: var.$global-font-color;
           width: 1.5rem;
           height: 2px;
           @include border-radius(3px);
@@ -260,7 +263,7 @@ header {
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
-        padding: ($header-height - 2.5rem) / 2 1rem;
+        padding: math.div(($header-height - 2.5rem), 2) 1rem;
         line-height: 2.5rem;
       }
 

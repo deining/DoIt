@@ -57,7 +57,7 @@
       font-weight: normal;
       margin: 0;
       padding: 0.5rem;
-      color: $global-font-secondary-color;
+      color: var.$global-font-secondary-color;
     }
   }
 }
@@ -75,7 +75,7 @@
   .summary {
     padding-top: 1rem;
     padding-bottom: 0.8rem;
-    color: $global-font-color;
+    color: var.$global-font-color;
     border-bottom: 3px dashed $global-border-color;
 
     .featured-image-preview {
@@ -112,7 +112,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       @include overflow-wrap(break-word);
-      color: $global-font-secondary-color;
+      color: var.$global-font-secondary-color;
 
       h2,
       h3,
@@ -138,7 +138,7 @@
 
       b,
       strong {
-        color: $global-font-secondary-color;
+        color: var.$global-font-secondary-color;
       }
     }
 

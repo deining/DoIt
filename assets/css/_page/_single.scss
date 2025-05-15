@@ -19,7 +19,7 @@
 
   .post-meta {
     font-size: 0.875rem;
-    color: $global-font-secondary-color;
+    color: var.$global-font-secondary-color;
 
     span {
       display: inline-block;
@@ -143,7 +143,7 @@
       background: $code-background-color;
 
       rt {
-        color: $global-font-secondary-color;
+        color: var.$global-font-secondary-color;
       }
     }
 
@@ -185,7 +185,7 @@
           margin: 0.7rem -0.5rem 0px 0.5rem;
           border-width: 0 4px 4px;
           border-style: solid;
-          border-color: $global-font-color transparent;
+          border-color: var.$global-font-color transparent;
 
           visibility: hidden;
           opacity: 0;
@@ -248,7 +248,7 @@
     }
 
     .footnotes {
-      color: $global-font-secondary-color;
+      color: var.$global-font-secondary-color;
 
       p {
         margin: 0.25rem 0;

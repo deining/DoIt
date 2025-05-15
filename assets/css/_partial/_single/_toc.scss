@@ -30,7 +30,7 @@
     background: $code-background-color;
 
     rt {
-      color: $global-font-secondary-color;
+      color: var.$global-font-secondary-color;
     }
   }
 }

@@ -11,14 +11,14 @@
 
       .post-info-mod {
         font-size: 0.8em;
-        color: $global-font-secondary-color;
+        color: var.$global-font-secondary-color;
 
         @include link(false, false);
       }
 
       .post-info-license {
         font-size: 0.8em;
-        color: $global-font-secondary-color;
+        color: var.$global-font-secondary-color;
 
         @include link(false, false);
       }

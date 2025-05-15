@@ -1,24 +1,27 @@
+@use "sass:color";
+@use "sass:map";
+
 .admonition {
   position: relative;
   margin: 1rem 0;
   padding: 0 0.75rem;
-  background-color: map-get($admonition-background-color-map, "note");
-  border-left: 0.25rem solid map-get($admonition-color-map, "note");
+  background-color: map.get($admonition-background-color-map, "note");
+  border-left: 0.25rem solid map.get($admonition-color-map, "note");
   overflow: auto;
 
   .admonition-title {
     font-weight: bold;
     margin: 0 -0.75rem;
     padding: 0.25rem 1.8rem;
-    border-bottom: 1px solid map-get($admonition-background-color-map, "note");
-    background-color: opacify(
-      map-get($admonition-background-color-map, "note"),
-      0.15
+    border-bottom: 1px solid map.get($admonition-background-color-map, "note");
+    background-color: color.adjust(
+      map.get($admonition-background-color-map, "note"),
+      $alpha: -0.15
     );
   }
 
   &.open .admonition-title {
-    background-color: map-get($admonition-background-color-map, "note");
+    background-color: map.get($admonition-background-color-map, "note");
   }
 
   .admonition-content {
@@ -27,7 +30,7 @@
 
   span.icon > svg {
     font-size: 0.85rem;
-    color: map-get($admonition-color-map, "note");
+    color: map.get($admonition-color-map, "note");
     position: absolute;
     top: 0.6rem;
     left: 0.4rem;
@@ -55,7 +58,7 @@
 
       .admonition-title {
         border-bottom-color: $color;
-        background-color: opacify($color, 0.15);
+        background-color: color.adjust($color, $alpha: -0.15);
       }
 
       &.open .admonition-title {
